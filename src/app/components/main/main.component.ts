@@ -3,11 +3,13 @@ import { Top3ProductsComponent } from '../top-3-products/top-3-products.componen
 import { SalesByCategoryComponent } from '../sales-by-category/sales-by-category.component';
 import { SalesByOrderComponent } from '../sales-by-order/sales-by-order.component';
 import { TotalSalesComponent } from '../total-sales/total-sales.component';
+import { HeaderComponent } from '../header/header.component';
+import { SidebarComponent } from '../sidebar/sidebar.component';
 
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [Top3ProductsComponent,SalesByCategoryComponent,SalesByOrderComponent,TotalSalesComponent],
+  imports: [Top3ProductsComponent,SalesByCategoryComponent,SalesByOrderComponent,TotalSalesComponent, HeaderComponent, SidebarComponent],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
 })

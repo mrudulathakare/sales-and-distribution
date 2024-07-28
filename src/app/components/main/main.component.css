@@ -1,9 +1,21 @@
 /* Main content area */
+.header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+}
+
+.sidebar {
+  height: 100vh; 
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: fixed;
+}
+
 .main-content {
-  margin-left: 250px; /* Same width as sidebar */
-  padding-top: 80px; /* Space for header */
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 50px; /* Space for header */
 }
 
 /* Middle section styles */

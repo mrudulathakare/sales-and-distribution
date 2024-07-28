@@ -73,14 +73,14 @@ export class AuthService {
   initAuthStateListener(): Promise<void> {
     return new Promise<void>((resolve) => {
       const auth = getAuth();
-
+  
       // Check if user is already signed in
       if (auth.currentUser) {
         console.log('User is already signed in');
         this.isAuthenticated = true;
         resolve();
       }
-
+  
       // Listen for auth state changes
       onAuthStateChanged(auth, (user) => {
         if (user) {

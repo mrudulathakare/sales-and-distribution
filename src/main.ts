@@ -13,11 +13,3 @@ import { HeaderComponent } from './app/components/header/header.component';
  
 bootstrapApplication(AppComponent, appConfig)
   .catch((err) => console.error(err));
-
-const routes = [
-  { path: '', redirectTo: 'login',pathMatch:'full'},
-  { path: 'login',Component:LoginComponent},
-  { path: 'register', Component: RegisterComponent},
-  { path: 'main',Component:MainComponent},
-  { path: 'header', Component:HeaderComponent}
-];

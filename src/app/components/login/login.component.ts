@@ -1,8 +1,8 @@
-import { Component, NgModule } from '@angular/core';
+import { Component } from '@angular/core';
 import { LoginForm } from '../../Auth/auth';
 import { AuthService } from '../../Auth/auth.service';
 import { Router } from '@angular/router';
-import { FormBuilder, FormGroup, FormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { NgIf } from '@angular/common';
 
 @Component({

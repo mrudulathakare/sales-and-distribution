@@ -9,6 +9,7 @@ import {
   faContactBook,
   faHand,
 } from '@fortawesome/free-solid-svg-icons';
+import { AuthService } from '../../Auth/auth.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -16,9 +17,10 @@ import {
   imports: [],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.css',
-  
+
 })
-export class SidebarComponent implements OnInit{
+export class SidebarComponent implements OnInit {
+
   faDashboard = faDashboard;
   faLocation = faLocation;
   faShop = faShop;
@@ -28,7 +30,11 @@ export class SidebarComponent implements OnInit{
   faContactBook = faContactBook;
   faHand = faHand;
 
-  constructor() { }
+  constructor(private authService: AuthService) { }
   ngOnInit(): void {
+  }
+
+  logout(): any {
+    this.authService.logout();
   }
 }
