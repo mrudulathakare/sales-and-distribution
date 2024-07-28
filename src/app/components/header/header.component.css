@@ -1,0 +1,39 @@
+.header {
+    height: 70px;
+    padding: 20px 50px;
+    background-color: rgb(1, 38, 69);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 5px 5px 5px #939393;
+    position: sticky !important;
+    top: 0;
+  }
+  
+  .heading {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-item {
+    margin-left: 20px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none; /* Remove underline for anchor tags */
+  }
+  
+  .nav-item i {
+    margin-right: 8px; /* Add some space between icon and text */
+  }
+  
+  .nav-item:hover {
+    text-decoration: underline; /* Optional: Add underline on hover for better UX */
+  }
+  
+  

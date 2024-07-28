@@ -1,0 +1,61 @@
+/* Main content area */
+.main-content {
+  margin-left: 250px; /* Same width as sidebar */
+  padding-top: 80px; /* Space for header */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Middle section styles */
+.middle-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px; /* Add space below middle section */
+  width: calc(100% - 270px); /* Adjusted width considering sidebar */
+}
+
+.middle-section .widget {
+  height: 250px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow: 5px 5px 5px #939393;
+  flex: 1 1 calc(50% - 40px); /* Responsive width with margins */
+}
+
+/* Bottom section styles */
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bottom-section .widget {
+  height: 250px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow: 5px 5px 5px #939393;
+  flex: 1 1 calc(50% - 40px); /* Responsive width with margins */
+}
+
+/* About Us and Contact Us styles */
+.about-contact-section {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.about-us, .contact-us {
+  width: calc(100% - 40px);
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px #939393;
+}
+
+.about-us h2, .contact-us h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
